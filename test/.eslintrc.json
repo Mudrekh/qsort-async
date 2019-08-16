@@ -1,0 +1,30 @@
+// Refer to http://eslint.org/docs/rules/ for details on each rule and how to configure them
+{
+  "extends": [
+    "../.eslintrc.json"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "should": true,
+    "expect": true,
+    "chai": true,
+    "Promise": true,
+    "sinon": true
+  },
+  "rules": {
+    "no-console": [
+      "warn"
+    ],
+    "no-magic-numbers": [
+      "off"
+    ],
+    "no-invalid-this": [
+      "off"
+    ],
+    "max-statements": [
+      "off"
+    ]
+  }
+}

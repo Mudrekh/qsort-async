@@ -1,0 +1,38 @@
+{
+  "name": "qsort-async",
+  "version": "1.0.0",
+  "description": "Async/Await style quicksort implemenation in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/Mudrekh/qsort-async.git"
+  },
+  "keywords": [
+    "async",
+    "sort",
+    "qsort",
+    "quicksort",
+    "nonblocking",
+    "yielding",
+    "yield",
+    "io",
+    "iosort",
+    "quick",
+    "sort"
+  ],
+  "author": "Mudrekh Goderya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mudrekh/qsort-async/issues"
+  },
+  "homepage": "https://github.com/Mudrekh/qsort-async#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "mocha": "^6.2.0"
+  }
+}
