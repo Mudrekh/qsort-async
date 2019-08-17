@@ -32,8 +32,12 @@ await quicksort(arr, (one, two) => {
 ```
 
 ## API
-- sort ( array, compare, [ size=10000 ] )
-  - array - The array to sort in place
-  - compare - function to compare elements of array
-  - size - The size minimum at which setImmediate is skipped
-    - if your compare function takes some time to execute, consider lowering this to yield to the eventloop/io more often
+### sort ( array, compare, [ size=10000 ] )
+- array - The array to sort in place
+- compare - function to compare elements of array
+- size - The size minimum at which setImmediate is skipped
+  - if your compare function takes some time to execute, consider lowering this to yield to the eventloop/io more often
+  - in theory, you could lower this all the way to 1, but this does not make sense for smaller arrays
+
+## TODO
+Add a version that accepts an async comparator... but do you need it?
