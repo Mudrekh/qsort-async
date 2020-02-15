@@ -1,4 +1,6 @@
-require('chai').should();
+const chai = require('chai');
+chai.should();
+chai.use(require('chai-as-promised'));
 
 const quicksort = require('../index.js');
 describe('quicksort', () => {
@@ -29,6 +31,13 @@ describe('quicksort', () => {
     // See we yield
     times.should.have.length.above(10);
   }).timeout(10000);
+  it('should sort an empty array', () => quicksort([], (one, two) => one - two));
+  it('should throw when not given an array', async () => {
+    await quicksort('asdfasd').should.eventually.be.rejectedWith(TypeError);
+  });
+  it('should throw when not given a a function', async () => {
+    await quicksort([], 'asdfasdfsda').should.eventually.be.rejectedWith(TypeError);
+  });
 });
 
 describe('default sort', () => {
