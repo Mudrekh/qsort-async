@@ -4,7 +4,8 @@
   "description": "Async/Await style quicksort implemenation in Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/*.spec.js"
+    "test": "nyc mocha",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,11 @@
   "homepage": "https://github.com/Mudrekh/qsort-async#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^3.0.9",
     "eslint": "^5.16.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
-    "mocha": "^6.2.0"
-  }
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0"
+  },
+  "dependencies": {}
 }
