@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Mudrekh/qsort-async.svg?branch=master)](https://travis-ci.org/Mudrekh/qsort-async) [![Coverage Status](https://coveralls.io/repos/github/Mudrekh/qsort-async/badge.svg?branch=master)](https://coveralls.io/github/Mudrekh/qsort-async?branch=master)
+
 # qsort-async
 Async/Await style quicksort implementation in Javascript
 
